@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exame</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">
+          <div class="userInfo">
+            <i id="closedMenuBtn" class="far fa-times-circle"></i>
+            <img src="./img/avatar.png" alt="" />
+            <div>
+              <div class="name">Administrador</div>
+              <div class="emailText">admin@admin.com.br</div>
+            </div>
+          </div>
+          <a class="brandLink" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./img/home-icon.png" alt="" />
+            </span>
+            Home
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./img/colaboradores-icon.png" alt="" />
+            </span>
+            Colaboradores
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./img/colaboradores-icon.png" alt="" />
+            </span>
+            Pacientes
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./img/solicitacoes-icon.png" alt="" />
+            </span>
+            Solicitações
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./img/consultas-icon.png" alt="" />
+            </span>
+            Consultas
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./img/medicacoes-icon.png" alt="" />
+            </span>
+            Medicações
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./img/novo-icon.png" alt="" />
+            </span>
+            Novo paciente
+          </a>
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents exam">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Administrador <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+              <a class="dropdown-item" href="#">Action 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents">
+          <h1 class="mainHeading">
+            Visualizar os dados do receituário e exames
+          </h1>
+          <!-- Table Contents -->
+          <div class="tableContents">
+            <h2 class="subHeading">Verificar todas as consultas</h2>
+            <!-- Web Table -->
+            <table class="dataTable">
+              <colgroup>
+                <col width="10%" />
+                <col width="15%" />
+                <col width="15%" />
+                <col width="19%" />
+                <col width="17%" />
+                <col width="18%" />
+                <col width="6%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Paciente</th>
+                  <th>Equipe</th>
+                  <th>Médico Plantonista</th>
+                  <th>Data/Hora</th>
+                  <th>Tratamento</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Carlos Alberto</td>
+                  <td>Equipe A</td>
+                  <td>Julio J de Castro Freitas</td>
+                  <td>31/12/2021 00:00:00</td>
+                  <td></td>
+                  <td>
+                    <a class="tableLink" href="#"
+                      ><i class="far fa-edit"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Carlos Alberto</td>
+                  <td>Equipe A</td>
+                  <td>Julio J de Castro Freitas</td>
+                  <td>31/12/2021 00:00:00</td>
+                  <td></td>
+                  <td>
+                    <a class="tableLink" href="#"
+                      ><i class="far fa-edit"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Carlos Alberto</td>
+                  <td>Equipe A</td>
+                  <td>Julio J de Castro Freitas</td>
+                  <td>31/12/2021 00:00:00</td>
+                  <td></td>
+                  <td>
+                    <a class="tableLink" href="#"
+                      ><i class="far fa-edit"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Carlos Alberto</td>
+                  <td>Equipe A</td>
+                  <td>Julio J de Castro Freitas</td>
+                  <td>31/12/2021 00:00:00</td>
+                  <td></td>
+                  <td>
+                    <a class="tableLink" href="#"
+                      ><i class="far fa-edit"></i
+                    ></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Hide Table -->
+            <div class="hideTable">
+              <div class="hideTableHeader">
+                <span class="hideTableHeading">ID</span>
+                <span class="hideTableHeading">Paciente</span>
+                <span class="hideTableHeading">Equipe</span>
+              </div>
+              <div class="custom-collapse">
+                <button class="accordion">
+                  <span class="hideTableHeading">1</span>
+                  <span class="hideTableHeading">Carlos Alberto</span>
+                  <span class="hideTableHeading">Equipe A</span>
+                </button>
+                <div class="panel">
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Médico Plantonista</div>
+                    <div class="carouselText">Julio J de Castro Freitas</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Data/Hora</div>
+                    <div class="carouselText">31/12/2021 00:00:00</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Tratamento</div>
+                    <div class="carouselText"></div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Edit</div>
+                    <div class="carouselText">
+                      <a class="collapseLink" href="#"
+                        ><i class="far fa-edit"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-collapse">
+                <button class="accordion">
+                  <span class="hideTableHeading">2</span>
+                  <span class="hideTableHeading">Carlos Alberto</span>
+                  <span class="hideTableHeading">Equipe A</span>
+                </button>
+                <div class="panel">
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Médico Plantonista</div>
+                    <div class="carouselText">Julio J de Castro Freitas</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Data/Hora</div>
+                    <div class="carouselText">31/12/2021 00:00:00</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Tratamento</div>
+                    <div class="carouselText"></div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Edit</div>
+                    <div class="carouselText">
+                      <a class="collapseLink" href="#"
+                        ><i class="far fa-edit"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-collapse">
+                <button class="accordion">
+                  <span class="hideTableHeading">3</span>
+                  <span class="hideTableHeading">Carlos Alberto</span>
+                  <span class="hideTableHeading">Equipe A</span>
+                </button>
+                <div class="panel">
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Médico Plantonista</div>
+                    <div class="carouselText">Julio J de Castro Freitas</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Data/Hora</div>
+                    <div class="carouselText">31/12/2021 00:00:00</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Tratamento</div>
+                    <div class="carouselText"></div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Edit</div>
+                    <div class="carouselText">
+                      <a class="collapseLink" href="#"
+                        ><i class="far fa-edit"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-collapse">
+                <button class="accordion">
+                  <span class="hideTableHeading">4</span>
+                  <span class="hideTableHeading">Carlos Alberto</span>
+                  <span class="hideTableHeading">Equipe A</span>
+                </button>
+                <div class="panel">
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Médico Plantonista</div>
+                    <div class="carouselText">Julio J de Castro Freitas</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Data/Hora</div>
+                    <div class="carouselText">31/12/2021 00:00:00</div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Tratamento</div>
+                    <div class="carouselText"></div>
+                  </div>
+                  <div class="collapseContents">
+                    <div class="carouselHeading">Edit</div>
+                    <div class="carouselText">
+                      <a class="collapseLink" href="#"
+                        ><i class="far fa-edit"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
