@@ -868,3 +868,32 @@ body {
 .input-search-bar::placeholder {
   color: #a3a6b4;
 }
+
+.status-wait-label,
+.status-cancel-label,
+.status-good-label {
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.status-good-label {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.table-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.status-cancel-label {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.status-wait-label {
+  background-color: #fff3cd;
+  color: #664d03;
+}
