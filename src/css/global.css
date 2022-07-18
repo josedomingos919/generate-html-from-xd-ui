@@ -29,7 +29,12 @@ body {
 .sideMenu .sideMenuBrand {
   text-align: center;
   background-color: #004a4c;
-  padding: 0.5em 0;
+  color: white;
+  font-weight: bold;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 .sideMenu .sideMenuBrand .brandLink {
   display: inline-block;
@@ -281,7 +286,6 @@ body {
 .tableContents {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   background-color: white;
-  padding: 1.3em;
   margin-top: 1em;
   min-height: 100vh;
 }
@@ -294,7 +298,6 @@ body {
   width: 100%;
   color: #a3a6b4;
   font-size: 0.9em;
-  margin-top: 1em;
 }
 .tableContents .dataTable thead th {
   font-weight: 400;
@@ -836,4 +839,32 @@ body {
   .pageContents .calanderChart .dateRow.thirdRow .pactente {
     left: 22px;
   }
+}
+
+.right-side-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.line-vertical {
+  height: 21px;
+  border: 1px solid #dfe5e4;
+}
+
+.input-search-bar {
+  height: 42px;
+  max-width: 254;
+  width: 100%;
+  border-radius: 42px;
+  padding: 5px 20px;
+  border: none;
+  color: black;
+  background-color: white;
+  outline: none;
+}
+
+.input-search-bar::placeholder {
+  color: #a3a6b4;
 }
