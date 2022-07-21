@@ -942,3 +942,9 @@ body {
   width: 24px;
   border: 2px solid #005356;
 }
+
+input[type="checkbox"]:hover,
+input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: #005356 !important;
+}

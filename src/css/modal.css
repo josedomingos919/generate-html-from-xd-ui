@@ -1,0 +1,76 @@
+.modal-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form-alert {
+  width: 462px;
+  min-height: 773px;
+  background-color: white;
+  padding: 30px 47px;
+  color: #606060;
+}
+
+.ficheiro-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.conetnt-info {
+  width: 100%;
+}
+
+.conetnt-info p {
+  text-align: justify;
+}
+
+.input-check-modal {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-check-label {
+  margin-left: 7px;
+}
+
+.form-check.custom .form-check-input {
+  transform: scale(1.4);
+}
+
+.form-check.custom {
+  display: flex;
+  margin-bottom: 10px;
+}
+.form-check.custom .form-check-label {
+  margin-top: -1px;
+}
+
+.border-footer {
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.menu-agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-agree a {
+  text-decoration: none !important;
+  font-size: 20px;
+  color: #00757a;
+}
