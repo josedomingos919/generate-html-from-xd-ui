@@ -919,3 +919,26 @@ body {
   color: #004346;
   font-size: 15px;
 }
+
+.pagination-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 10px;
+}
+
+.pagination-item.active {
+  background-color: #026265;
+  color: white;
+}
+
+.pagination-item {
+  text-decoration: none;
+  height: 24px;
+  color: #026265;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  width: 24px;
+  border: 2px solid #005356;
+}
