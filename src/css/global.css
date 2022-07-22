@@ -948,3 +948,8 @@ input[type="checkbox"] {
   cursor: pointer;
   accent-color: #005356 !important;
 }
+
+.table-options.local {
+  justify-content: flex-end;
+  padding-right: 10px;
+}
