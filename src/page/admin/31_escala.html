@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">
+          LOGO
+        </div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/gestao-de-tratamento.svg" alt="" />
+            </span>
+            Gestão de tratamentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/atendimentos.svg" alt="" />
+            </span>
+            Atendimentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/notificacoes.svg" alt="" />
+            </span>
+            Notificações
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/script-de-autorizacao.svg" alt="" />
+            </span>
+            Script de autorização 
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/pacientes.svg" alt="" />
+            </span>
+            Pacientes
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/locais-de-procedimento.svg" alt="" />
+            </span>
+            Locais de Procedimentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/farmacos.svg" alt="" />
+            </span>
+            Fármacos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/usuarios.svg" alt="" />
+            </span>
+            Usuários
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/cids.svg" alt="" />
+            </span>
+            CIDs
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/especialidades.svg" alt="" />
+            </span>
+            Especialidades
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/tipos-de-tratamentos.svg" alt="" />
+            </span>
+            Tipos de tratamentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/convenio.svg" alt="" />
+            </span>
+            Convênios
+          </a>
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./../../assets/svg/escala.svg" alt="" />
+            </span>
+            Escalas
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/tipo-de-posologia.svg" alt="" />
+            </span>
+            Tipo de posologia
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/credenciamentos.svg" alt="" />
+            </span>
+            Credenciamentos
+          </a> 
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Administrador <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+              <a class="dropdown-item" href="#">Action 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents"> 
+          <div class="row custom-form"> 
+            <div class="col-1">
+              <div class="title-dashboard">Escalas</div> 
+            </div>
+            <div class="col-8" >
+              <div class="row">
+                <div class="col-3">  
+                  <label class="form-label custom-label">Unidade</label>
+                  <select class="form-control" aria-label="Default select example">
+                    <option selected value="Brasília">Brasília</option>
+                    <option value="1"></option> 
+                  </select>
+                </div>
+                <div class="col-3">  
+                  <label class="form-label custom-label">Especialidade</label>
+                  <select class="form-control" aria-label="Default select example">
+                    <option selected value="">Reumatologia</option>
+                    <option value="1"></option> 
+                  </select>
+                </div>
+                <div class="col-3">  
+                  <label class="form-label custom-label">Médico</label>
+                  <select class="form-control" aria-label="Default select example">
+                    <option selected value="">Escolha o médico</option>
+                    <option value="1"></option> 
+                  </select>
+                </div>
+                <div class="col-3">  
+                  <label class="form-label custom-label">Semana</label> 
+                  <input class="form-control" type="week" />
+                </div> 
+              </div> 
+            </div>
+            <div class="col-3">
+              <div class="header-right-content">
+                <div class="header-content-right1">
+                  <button>Dia</button>
+                  <button class="active">Semana</button>
+                  <button>Mês</button>
+                </div>
+                <div class="header-content-right2">
+                  <a href="#"><img src="./../../assets/svg/excel.svg" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           
+          <!-- Table Contents -->
+          <div class="form-content">
+            <div class="calanderChart">
+              <div class="chartParent">  
+                <div class="linesCalandar">
+                  <div class="numbersRow">
+                    <div class="line"></div>
+                    <div class="line">6h00</div>
+                    <div class="line"></div>
+                    <div class="line">7h00</div>
+                    <div class="line"></div>
+                    <div class="line">8h00</div>
+                    <div class="line"></div>
+                    <div class="line">9h00</div>
+                    <div class="line"></div>
+                    <div class="line">10h00</div>
+                    <div class="line"></div>
+                    <div class="line">11h00</div>
+                    <div class="line"></div>
+                    <div class="line">12h00</div>
+                    <div class="line"></div>
+                    <div class="line">13h00</div>
+                    <div class="line"></div>
+                    <div class="line">14h00</div>
+                    <div class="line"></div>
+                    <div class="line">15h00</div>
+                    <div class="line"></div>
+                    <div class="line">16h00</div>
+                    <div class="line"></div>
+                    <div class="line">17h00</div>
+                    <div class="line"></div>
+                    <div class="line">18h00</div>
+                    <div class="line"></div>
+                    <div class="line">19h00</div>
+                    <div class="line"></div>
+                    <div class="line">20h00</div>
+                  </div>
+                  <div class="dateRow active secondRow">
+                    <div class="line">Segunda-feira 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="pactente">Pactente XXX</div>
+                    <div class="pactente green">Pactente XPTO</div>
+                  </div>
+                  <div class="dateRow thirdRow">
+                    <div class="line">Terça-feira 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="pactente">Pactente XXX</div>
+                    <div class="pactente green">Pactente XPTO</div>
+                  </div>
+                  <div class="dateRow">
+                    <div class="line">Quarta-feira 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="dateRow fourthRow">
+                    <div class="line">Quinta-feira 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="pactente green">Pactente XPTO</div>
+                  </div>
+                  <div class="dateRow fifthRow">
+                    <div class="line">Sexta-feira 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="pactente">Pactente XXX</div>
+                  </div>
+                  <div class="dateRow">
+                    <div class="line">Sábado 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                  </div>
+                  <div class="dateRow">
+                    <div class="line">Domingo 06/12</div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

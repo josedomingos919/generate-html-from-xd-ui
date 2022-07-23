@@ -172,7 +172,6 @@ body {
 }
 .pageContents .calanderChart .linesCalandar {
   display: flex;
-  margin-top: 1em;
 }
 .pageContents .calanderChart .linesCalandar .numbersRow {
   width: 9%;
@@ -981,4 +980,62 @@ input[type="checkbox"] {
 .table-options.left {
   display: flex;
   justify-content: flex-start;
+}
+
+.form-content {
+  margin-top: 20px;
+}
+
+.title-dashboard {
+  padding-top: 22px;
+  font-size: 24px;
+  color: #004346;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header-right-content {
+  padding-top: 22px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  gap: 28px;
+}
+
+.header-content-right1 button {
+  margin: 0px;
+  color: #004346;
+  padding: 3px 25px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-top: 1px solid #004346;
+  border-bottom: 1px solid #004346;
+}
+
+.header-content-right1 button:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-left: 1px solid #004346;
+}
+
+.header-content-right1 button:last-child {
+  border-right: 1px solid #004346;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.header-content-right1 .active {
+  background-color: #004346;
+  color: white;
+}
+
+.header-content-right1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
