@@ -977,3 +977,8 @@ input[type="checkbox"] {
 .text-align-right {
   text-align: left !important;
 }
+
+.table-options.left {
+  display: flex;
+  justify-content: flex-start;
+}
