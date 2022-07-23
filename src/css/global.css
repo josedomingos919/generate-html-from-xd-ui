@@ -953,3 +953,15 @@ input[type="checkbox"] {
   justify-content: flex-end;
   padding-right: 10px;
 }
+
+.img-label-email {
+  margin-left: 5px;
+}
+
+.status-label-text-green {
+  color: #005356;
+}
+
+.status-label-text-red {
+  color: #560000;
+}
