@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">
+          LOGO
+        </div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/gestao-de-tratamento.svg" alt="" />
+            </span>
+            Gestão de tratamentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/atendimentos.svg" alt="" />
+            </span>
+            Atendimentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/notificacoes.svg" alt="" />
+            </span>
+            Notificações
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/script-de-autorizacao.svg" alt="" />
+            </span>
+            Script de autorização 
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/pacientes.svg" alt="" />
+            </span>
+            Pacientes
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/locais-de-procedimento.svg" alt="" />
+            </span>
+            Locais de Procedimentos
+          </a>
+          <a class="sideMenuLink " href="#">
+            <span>
+              <img src="./../../assets/svg/farmacos.svg" alt="" />
+            </span>
+            Fármacos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/usuarios.svg" alt="" />
+            </span>
+            Usuários
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/cids.svg" alt="" />
+            </span>
+            CIDs
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/especialidades.svg" alt="" />
+            </span>
+            Especialidades
+          </a>
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./../../assets/svg/tipos-de-tratamentos.svg" alt="" />
+            </span>
+            Tipos de tratamentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/convenio.svg" alt="" />
+            </span>
+            Convênios
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/escala.svg" alt="" />
+            </span>
+            Escalas
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/tipo-de-posologia.svg" alt="" />
+            </span>
+            Tipo de posologia
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/credenciamentos.svg" alt="" />
+            </span>
+            Credenciamentos
+          </a> 
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Administrador <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Trocar de perfil</a>
+              <a class="dropdown-item" href="#">Meu Perfil</a>
+              <a class="dropdown-item" href="#">Sair</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents">
+          <div class="row odd">
+            <div class="col-lg-6">
+              <h1 class="mainHeading">Tipos de tratamentos</h1>
+            </div>
+            <div class="col-lg-6 right-side-bar">
+                <div><a class="mainBtn" href="#">Adicionar</a></div>
+                <div><a href="#"><img src="./../../assets/svg/excel.svg" /></a></div>
+                <div><div class="line-vertical"></div></div>
+                <div><input class="input-search-bar" type="text" placeholder="Pesquisar" /></div>
+            </div>
+          </div>
+  
+          <!-- Table Contents -->
+          <div class="tableContents"> 
+            <table class="dataTable"> 
+              <thead>
+                <tr>
+                  <th>Tipo</th>  
+                  <th>Precisa de autorização?</th>
+                  <th>Time</th>
+                  <th style="width: 70%;"></th>
+                </tr>
+              </thead>
+              <tbody>   
+                <tr> 
+                  <td>Vacina</td>  
+                  <td>Não</td>
+                  <td>CS</td> 
+                  <td>
+                    <div class="table-options local">  
+                        <a href="#"><img src="./../../assets/svg/link-2.svg"></a>
+                    </div>
+                  </td>
+                </tr>  
+                <tr> 
+                  <td>XPTO</td>  
+                  <td>Não</td>
+                  <td>CS</td> 
+                  <td>
+                    <div class="table-options local">  
+                        <a href="#"><img src="./../../assets/svg/link-2.svg"></a>
+                    </div>
+                  </td>
+                </tr>    
+                <tr> 
+                  <td>Vacina</td>  
+                  <td>Sim</td>
+                  <td>CS</td> 
+                  <td>
+                    <div class="table-options local">  
+                        <a href="#"><img src="./../../assets/svg/link-2.svg"></a>
+                    </div>
+                  </td>
+                </tr>    
+                <tr> 
+                  <td>Vacina</td>  
+                  <td>Não</td>
+                  <td>CS</td> 
+                  <td>
+                    <div class="table-options local">  
+                        <a href="#"><img src="./../../assets/svg/link-2.svg"></a>
+                    </div>
+                  </td>
+                </tr>  
+              </tbody>
+            </table>
+            <div class="pagination-wrap">
+              <a href="#" class="pagination-item active">1</a>
+              <a href="#" class="pagination-item">2</a>
+              <a href="#" class="pagination-item">3</a>
+              <a href="#" class="pagination-item">4</a>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

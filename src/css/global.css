@@ -965,3 +965,11 @@ input[type="checkbox"] {
 .status-label-text-red {
   color: #560000;
 }
+
+.checkbox-big {
+  transform: scale(1.5);
+}
+
+.align-center {
+  text-align: center;
+}
