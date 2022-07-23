@@ -973,3 +973,7 @@ input[type="checkbox"] {
 .align-center {
   text-align: center;
 }
+
+.text-align-right {
+  text-align: left !important;
+}
