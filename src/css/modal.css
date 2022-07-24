@@ -74,3 +74,7 @@
   font-size: 20px;
   color: #00757a;
 }
+
+.modal-form-alert.accept {
+  min-height: 100px !important;
+}
