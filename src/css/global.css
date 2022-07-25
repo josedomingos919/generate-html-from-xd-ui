@@ -1326,3 +1326,32 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
 }
+
+.form-modal-alert-error {
+  width: 705px;
+  height: 460px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-label-message {
+  color: #842029;
+}
+
+.form-modal-alert-error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-modal-alert-error div {
+  margin-bottom: 25px;
+}
+
+.mainBtn.circle-test {
+  border-radius: 24px;
+  padding: 6px 10px;
+}
