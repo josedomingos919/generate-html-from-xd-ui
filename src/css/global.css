@@ -1423,3 +1423,7 @@ input[type="checkbox"] {
 .item-file-manager img {
   margin-right: 10px;
 }
+
+.item-file-manager:nth-child(2n) {
+  margin-top: 10px;
+}
