@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">LOGO</div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/gestao-de-tratamento.svg" alt="" />
+            </span>
+            Gestão de tratamentos
+          </a>
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./../../assets/svg/atendimentos.svg" alt="" />
+            </span>
+            Atendimentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/notificacoes.svg" alt="" />
+            </span>
+            Notificações
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/script-de-autorizacao.svg" alt="" />
+            </span>
+            Script de autorização
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/pacientes.svg" alt="" />
+            </span>
+            Pacientes
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/locais-de-procedimento.svg" alt="" />
+            </span>
+            Locais de Procedimentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/farmacos.svg" alt="" />
+            </span>
+            Fármacos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/usuarios.svg" alt="" />
+            </span>
+            Usuários
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/cids.svg" alt="" />
+            </span>
+            CIDs
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/especialidades.svg" alt="" />
+            </span>
+            Especialidades
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/tipos-de-tratamentos.svg" alt="" />
+            </span>
+            Tipos de tratamentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/convenio.svg" alt="" />
+            </span>
+            Convênios
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/escala.svg" alt="" />
+            </span>
+            Escalas
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/tipo-de-posologia.svg" alt="" />
+            </span>
+            Tipo de posologia
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/credenciamentos.svg" alt="" />
+            </span>
+            Credenciamentos
+          </a>
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Administrador <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Action 1</a>
+              <a class="dropdown-item" href="#">Action 2</a>
+              <a class="dropdown-item" href="#">Action 3</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents">
+          <div class="row odd">
+            <div class="col-lg-6">
+              <h1 class="mainHeading">Atendimento</h1>
+            </div>
+            <div class="col-lg-6 right-side-bar">
+              <div><a class="mainBtn" href="#">Salvar</a></div>
+            </div>
+          </div>
+
+          <!-- body -->
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="content-form-add column">
+                <div class="content-form-add-2">
+                  <label class="form-add-lg-title item-inline"
+                    >Paciente:
+                    <img
+                      style="margin-left: 10px"
+                      src="./../../assets/svg/editar-baixo.svg"
+                  /></label>
+                  <label class="form-add-lg-subtitle"
+                    >Nome: Acucena Galuchino Perin</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >CPF: 000.000.000-00</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Convênio: AMIL - Plano 600</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Telefone: (11) 99999-9999</label
+                  >
+
+                  <label
+                    style="margin-top: 25px"
+                    class="form-add-lg-title item-inline"
+                    >TRATAMENTO XPTO
+                    <img
+                      style="margin-left: 10px"
+                      src="./../../assets/svg/editar-baixo.svg"
+                  /></label>
+                  <label class="form-add-lg-subtitle"
+                    >Brasília - 16/05/2022</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Fármaco: Ibuprofeno</label
+                  >
+                  <label class="form-add-lg-subtitle">CID: 50</label>
+                  <label class="form-add-lg-subtitle">Dosagem: 130mg</label>
+                  <label class="form-add-lg-subtitle"
+                    >Frequência: 15 em 15 dias</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Médico Prescritor: Nicolas</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Médico Suplente: Murilo</label
+                  >
+                  <label class="form-add-lg-subtitle">Data: 16/05/2022</label>
+                  <label class="form-add-lg-subtitle">Quantidade: 3/9</label>
+                  <label class="form-add-lg-subtitle">Status: Aprovado</label>
+                  <label class="form-add-lg-subtitle" style="margin-top: 50px"
+                    >Número do registro: 000000</label
+                  >
+
+                  <label class="form-add-lg-title separator"
+                    >Data e hora:</label
+                  >
+                  <div class="line-border"></div>
+                  <label class="form-add-lg-subtitle">23/02/2022 16:07</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="content-form-add-right">
+                <div class="view-line">
+                  <div class="row">
+                    <div class="col-4">
+                      <label class="form-label">Número de atendimento</label>
+                      <input
+                        class="form-control green"
+                        type="text"
+                        value="000000000000000"
+                        placeholder=""
+                      />
+                    </div>
+                    <div class="col-4">
+                      <label class="form-label">Médico Prescritor</label>
+                      <select class="form-control">
+                        <option>Nicolas Banfi</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label class="form-label">Médico Executor</label>
+                      <select class="form-control">
+                        <option></option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-line">
+                  <div class="row">
+                    <div class="col-4">
+                      <label class="form-label">CID:</label>
+                      <select class="form-control">
+                        <option>M60</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label class="form-label">Local:</label>
+                      <select class="form-control">
+                        <option>9 de Julho</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-line">
+                  <div class="row">
+                    <div class="col-2">
+                      <label class="form-label">Fármaco</label>
+                      <select class="form-control">
+                        <option>SINAGYS</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <label>Dose</label>
+                      <input type="number" class="form-control" value="9" />
+                    </div>
+                  </div>
+                </div>
+                <div class="view-line no-border">
+                  <label>Observações:</label>
+                  <textarea
+                    class="form-control adjust-text-area"
+                    placeholder="Digite sua observação"
+                  ></textarea>
+                </div>
+                <div class="view-line no-border">
+                  <div class="item-file-manager">
+                    <div><img src="../../assets/svg/camera-green.svg" /></div>
+                    <div>Anexar arquivo / foto</div>
+                  </div>
+                  <div class="item-file-manager">
+                    <div>
+                      <img src="../../assets/svg/garvador-de-son.svg" />
+                    </div>
+                    <div>Gravar áudio</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
