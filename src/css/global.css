@@ -1355,3 +1355,40 @@ input[type="checkbox"] {
   border-radius: 24px;
   padding: 6px 10px;
 }
+
+.form-modal-with-table {
+  width: 944px;
+  height: 442px;
+  background-color: white;
+}
+
+.form-modal-with-table .tableContents {
+  margin: 0px;
+  box-shadow: unset;
+}
+
+.form-footer-table {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-btn-footer {
+  display: flex;
+}
+
+.form-btn-footer img {
+  margin-right: 10px;
+}
+
+.delete-item-test {
+  top: 0;
+  right: 0;
+  margin-top: -45px;
+  position: absolute;
+}
+
+.form-modal-with-table {
+  position: relative;
+}
