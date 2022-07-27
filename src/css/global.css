@@ -1484,3 +1484,9 @@ input[type="checkbox"] {
 .mainBtn.light-green {
   background-color: #026265;
 }
+
+.mainBtn.transparent-light {
+  background-color: #f0f7f6;
+  color: #80c340;
+  border: 1px solid #80c340;
+}
