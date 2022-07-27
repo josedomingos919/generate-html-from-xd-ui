@@ -1458,3 +1458,29 @@ input[type="checkbox"] {
 .mainBtn.very-green {
   background-color: #004a4c;
 }
+
+.mainBtn.transparent {
+  border: 1px solid #004a4c;
+  color: #004a4c;
+  background-color: #f0f7f6;
+}
+
+.user-footer-subtitle {
+  color: #606060;
+}
+
+.radio-input-container {
+  display: inline-block;
+}
+
+.radio-input-container label {
+  margin-left: 6px;
+}
+.radio-input-container input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: #005356 !important;
+}
+
+.mainBtn.light-green {
+  background-color: #026265;
+}
