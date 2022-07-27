@@ -1209,6 +1209,12 @@ input[type="checkbox"] {
   min-height: 100vh;
 }
 
+.content-form-add-normal {
+  margin-top: 20px;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
 .view-line {
   padding: 20px 40px;
   border-bottom: 1px solid #f1f1f3;
@@ -1426,4 +1432,29 @@ input[type="checkbox"] {
 
 .item-file-manager:nth-child(2n) {
   margin-top: 10px;
+}
+
+.mainBtn.delete {
+  color: #842029;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+}
+
+.form-add-footer-button {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+
+.mainBtn.no-round {
+  border-radius: 0px;
+  min-width: 200px;
+}
+
+.mainBtn.very-green {
+  background-color: #004a4c;
 }
