@@ -1507,3 +1507,62 @@ input[type="checkbox"] {
 .title-pososlogi-item {
   color: #ababab;
 }
+
+.modal-group {
+  padding: 10px 20px;
+  background-color: white;
+  max-width: 1681px;
+  width: 100%;
+  min-height: 434px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-table-group-header {
+  width: 100%;
+}
+
+.form-left-header {
+  display: flex;
+  align-items: center;
+}
+
+.form-left-header label {
+  margin-top: 7px;
+}
+
+.form-right-header {
+  text-align: right;
+}
+
+.input-multiple {
+  display: flex;
+  height: 38px;
+  padding: 0px 10px;
+}
+
+.input-multiple select,
+.input-multiple input {
+  outline: none;
+  border: none;
+  color: #a3a6b4;
+}
+
+.form-left-header input,
+.form-left-header label {
+  color: #a3a6b4 !important;
+}
+
+.input-multiple input {
+  width: 100%;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #e6e6e6;
+}
+
+.form-group-center-separtator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
