@@ -1570,3 +1570,60 @@ input[type="checkbox"] {
 .title-bold {
   font-weight: bold !important;
 }
+
+.gest-modal {
+  width: 100%;
+  max-width: 328px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gest-modal-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gest-modal-content {
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gest-modal-title label {
+  color: #026265;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-control.radius {
+  border-radius: 20px;
+}
+
+.form-group label {
+  color: #828282;
+  font-weight: bold;
+}
+
+.gest-line {
+  background-color: #e7e7e7;
+  height: 1px;
+  width: 100%;
+}
+
+.gest-footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.mainBtn.green-opacity {
+  background-color: #d1e7dd;
+  border: 1px solid #bbd9cb;
+  color: #0f5132;
+}
