@@ -1,0 +1,15 @@
+<svg id="Background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="507.767" height="407.283" viewBox="0 0 507.767 407.283">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Mask" d="M0,0H507.267a0,0,0,0,1,0,0V373.283a34,34,0,0,1-34,34H34a34,34,0,0,1-34-34V0A0,0,0,0,1,0,0Z" fill="#00757a"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.903" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#005356"/>
+      <stop offset="1" stop-color="#00757a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path id="Mask-2" data-name="Mask" d="M0,0H507.267a0,0,0,0,1,0,0V373.283a34,34,0,0,1-34,34H34a34,34,0,0,1-34-34V0A0,0,0,0,1,0,0Z" transform="translate(0.5)" fill="#56c596"/>
+  <g id="Background-2" data-name="Background" transform="translate(0)" clip-path="url(#clip-path)">
+    <path id="Background-3" data-name="Background" d="M0,0H507.267a0,0,0,0,1,0,0V373.283a34,34,0,0,1-34,34H34a34,34,0,0,1-34-34V0A0,0,0,0,1,0,0Z" transform="translate(-0.612 -0.388)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

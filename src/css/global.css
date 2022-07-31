@@ -1635,3 +1635,104 @@ input[type="checkbox"] {
 .label-radio input {
   margin-top: 2px;
 }
+
+.treatment-modal {
+  width: 498px;
+  min-height: 733px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-background {
+  height: 400px;
+  background-image: url(../assets/svg/fundo-modal.svg);
+  background-size: contain !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+}
+
+.treatment-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -357px;
+}
+
+.label-treatment {
+  font-size: 21px;
+  font-weight: bold;
+  width: 240px;
+  color: white;
+  text-align: center;
+}
+
+.treatment-card {
+  margin-top: 15px;
+  width: 312px;
+  background-color: white;
+  box-shadow: 0px 0px 40px 12px rgb(0, 0, 0, 0.02);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.treatment-error-message {
+  color: #b26868;
+  font-size: 13pt;
+}
+
+.icon-treatment-success {
+  margin-top: 10px;
+}
+
+.tratment-border-modal {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  height: 1px;
+  width: 100%;
+  background-color: #cbcbcb;
+}
+
+.tratment-unmount-value {
+  color: #b3c3cf;
+  font-size: 15pt;
+}
+
+.tratment-unmount-value-number {
+  color: #205072;
+  font-size: 25pt;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+
+.tratment-footer-info {
+  color: #68b2a0;
+  font-size: 13pt;
+  text-align: center;
+  width: 269px;
+}
+
+.treatment-button-success {
+  background-color: #55c394;
+  height: 55px;
+  border-radius: 55px;
+  border: none;
+  outline: none;
+  color: white;
+  min-width: 306px;
+  margin-top: 25px;
+}
+
+.tratment-button-back {
+  margin-top: 15px;
+  color: #205172;
+  margin-bottom: 50px;
+}
+
+.opcacity-0-3 {
+  opacity: 0.3;
+}
