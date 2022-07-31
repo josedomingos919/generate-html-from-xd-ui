@@ -1566,3 +1566,7 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
 }
+
+.title-bold {
+  font-weight: bold !important;
+}
