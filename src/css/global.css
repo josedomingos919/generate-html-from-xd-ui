@@ -1627,3 +1627,11 @@ input[type="checkbox"] {
   border: 1px solid #bbd9cb;
   color: #0f5132;
 }
+
+.label-radio {
+  display: flex;
+  gap: 10px;
+}
+.label-radio input {
+  margin-top: 2px;
+}
