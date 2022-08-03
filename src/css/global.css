@@ -1781,3 +1781,55 @@ body {
   display: flex;
   align-items: flex-start;
 }
+
+.mobile-input-filed {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #eaeaea;
+  border-radius: 5px;
+  padding: 5px 20px;
+  transition: 0.4s;
+}
+
+.mobile-input-filed:focus-within {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.mobile-input-filed-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-input-filed-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-input-filed-content-header label {
+  margin: 0px;
+  color: #c2c2c2;
+}
+
+.mobile-input-filed-content {
+  flex: 1;
+  min-height: 24px;
+}
+
+.mobile-input-filed-input input {
+  border: none;
+  outline: none;
+  color: #888888;
+  width: 100%;
+  padding-right: 15px;
+}
+
+.button-with-gradient {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 55px;
+  color: white;
+  background-image: linear-gradient(to right, #46af89, #187368, #0b625f);
+}
