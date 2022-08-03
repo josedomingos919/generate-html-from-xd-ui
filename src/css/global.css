@@ -1736,3 +1736,48 @@ input[type="checkbox"] {
 .opcacity-0-3 {
   opacity: 0.3;
 }
+
+body {
+  margin: 0px !important;
+}
+
+.form-green-title {
+  color: #005356;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+.card-tratment {
+  border-bottom: 1px solid #e0ecde;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.card-tratment-go-on {
+  display: flex;
+}
+
+.card-tratment-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-tratment-info label {
+  color: #b3c3cf;
+  margin: 0px;
+}
+
+.card-tratment-info h1 {
+  color: #205072;
+  font-weight: bold;
+}
+
+.card-tratment-info span {
+  color: #205072;
+}
+
+.card-tratment-go-on {
+  display: flex;
+  align-items: flex-start;
+}
