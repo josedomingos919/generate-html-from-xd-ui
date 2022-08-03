@@ -1817,6 +1817,24 @@ body {
   min-height: 24px;
 }
 
+.mobile-input-filed.green input,
+.mobile-input-filed.green {
+  background-color: #deedee;
+}
+
+.mobile-input-filed.green input {
+  color: black;
+}
+
+.mobile-input-filed.green {
+  border-color: #00757a;
+}
+
+.mobile-input-filed.green .mobile-input-filed-content-header label {
+  color: #8a8a8a;
+}
+
+.mobile-input-filed-input textarea,
 .mobile-input-filed-input input {
   border: none;
   outline: none;
@@ -1832,4 +1850,18 @@ body {
   border-radius: 55px;
   color: white;
   background-image: linear-gradient(to right, #46af89, #187368, #0b625f);
+}
+
+.mobile-content-file .view-line.no-border {
+  padding: 0px;
+}
+
+.footer-mobile-content {
+  flex: 1;
+  height: 100%;
+  margin-top: 100%;
+}
+
+.content-form-add.column.mobile {
+  height: 60%;
 }
