@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+    <link rel="stylesheet" href="./../../css/modal.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">LOGO</div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/gestao-de-tratamento.svg" alt="" />
+            </span>
+            Gestão de tratamentos
+          </a>
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./../../assets/svg/atendimentos.svg" alt="" />
+            </span>
+            Atendimentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/pacientes.svg" alt="" />
+            </span>
+            Pacientes
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/escala.svg" alt="" />
+            </span>
+            Escalas
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/credenciamentos.svg" alt="" />
+            </span>
+            Credenciamentos
+          </a>
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Administrador <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Trocar de perfil</a>
+              <a class="dropdown-item" href="#">Meu Perfil</a>
+              <a class="dropdown-item" href="#">Sair</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents">
+          <div class="row odd">
+            <div class="col-lg-6">
+              <h1 class="mainHeading">Meus Atendimentos</h1>
+            </div>
+            <div class="col-lg-6 right-side-bar">
+              <div><a class="mainBtn" href="#">Iniciar atendimento</a></div>
+              <div>
+                <a href="#"><img src="./../../assets/svg/excel.svg" /></a>
+              </div>
+              <div><div class="line-vertical"></div></div>
+              <div>
+                <input
+                  class="input-search-bar"
+                  type="text"
+                  placeholder="Pesquisar"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row custom-form">
+            <div class="col-2">
+              <label class="form-label custom-label">Unidade</label>
+              <select class="form-control" aria-label="Default select example">
+                <option selected></option>
+                <option value="1"></option>
+              </select>
+            </div>
+            <div class="col-2">
+              <label class="form-label custom-label">Paciente</label>
+              <select class="form-control" aria-label="Default select example">
+                <option selected></option>
+                <option value="1"></option>
+              </select>
+            </div>
+            <div class="col-2">
+              <label class="form-label custom-label">Médico Prescritor</label>
+              <select class="form-control" aria-label="Default select example">
+                <option selected value="">Escolha o médico</option>
+                <option value="1"></option>
+              </select>
+            </div>
+            <div class="col-2">
+              <label class="form-label custom-label">Médico Executor</label>
+              <input class="form-control" type="text" />
+            </div>
+            <div class="col-2">
+              <label class="form-label custom-label">Data de atendimento</label>
+              <input class="form-control" type="text" />
+            </div>
+          </div>
+
+          <!-- Table Contents -->
+          <div class="tableContents">
+            <table class="dataTable">
+              <thead>
+                <tr>
+                  <th>Nro.</th>
+                  <th>Paciente</th>
+                  <th>Médico prescritor</th>
+                  <th>Médico executor</th>
+                  <th>Local Procedimento</th>
+                  <th>Atendimento</th>
+                  <th>Numero do tratamento</th>
+                  <th>Data do atendimento</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Acucena Galuchino Perin</td>
+                  <td>Nicolas Banfi</td>
+                  <td>Murillo Dório Queiroz</td>
+                  <td>9 de Julho</td>
+                  <td>1/4</td>
+                  <td>1</td>
+                  <td>20/12/2021</td>
+                  <td>
+                    <div class="table-options">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Acucena Galuchino Perin</td>
+                  <td>Nicolas Banfi</td>
+                  <td>Murillo Dório Queiroz</td>
+                  <td>9 de Julho</td>
+                  <td>1/4</td>
+                  <td>1</td>
+                  <td>20/12/2021</td>
+                  <td>
+                    <div class="table-options">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Acucena Galuchino Perin</td>
+                  <td>Nicolas Banfi</td>
+                  <td>Murillo Dório Queiroz</td>
+                  <td>9 de Julho</td>
+                  <td>1/4</td>
+                  <td>1</td>
+                  <td>20/12/2021</td>
+                  <td>
+                    <div class="table-options">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination-wrap">
+              <a href="#" class="pagination-item active">1</a>
+              <a href="#" class="pagination-item">2</a>
+              <a href="#" class="pagination-item">3</a>
+              <a href="#" class="pagination-item">4</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none" class="modal-content" id="modal1">
+      <div class="modal-update-user-info">
+        <div class="btn-close-modal-update-user-info">
+          <a href="#"> <img src="../../assets/svg/exit-button.svg" /> </a>
+        </div>
+        <div class="update-user-info-photo">
+          <div class="container-user-img-profile">
+            <img
+              src="../../assets/svg/user-photo.svg"
+              class="user-img-profile"
+            />
+            <a href="#" class="container-user-tack-photo">
+              <img src="../../assets/svg/user-camera.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="input-container-update">
+          <div class="group-input-container mb-3">
+            <label>Nome</label>
+            <input type="text" value="DR. NICOLAS BANFI" />
+          </div>
+          <div class="group-input-container mb-3">
+            <label>E-mail</label>
+            <input type="text" value="nicolas@dominio.com.br" />
+          </div>
+          <div class="group-input-container mb-3">
+            <label>Especialidade</label>
+            <input type="text" value="Reumatologista" />
+          </div>
+        </div>
+        <div class="footer-update-profile">
+          <label>Termos e condições & Politica de uso de dados</label>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      $("#modal1").show();
+    </script>
+  </body>
+</html>
