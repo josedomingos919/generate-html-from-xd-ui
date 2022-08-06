@@ -1865,3 +1865,12 @@ body {
 .content-form-add.column.mobile {
   height: 60%;
 }
+
+.normal-gradient {
+  background-image: linear-gradient(
+    to right,
+    #46af89,
+    #187368,
+    #0b625f
+  ) !important;
+}
