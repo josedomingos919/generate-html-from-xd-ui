@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+    <link rel="stylesheet" href="./../../css/modal.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">LOGO</div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./../../assets/svg/notificacoes.svg" alt="" />
+            </span>
+            Notificações
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/escala.svg" alt="" />
+            </span>
+            Escalas
+          </a>
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Diretor <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Trocar de perfil</a>
+              <a class="dropdown-item" href="#">Meu Perfil</a>
+              <a class="dropdown-item" href="#">Sair</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents">
+          <div class="row odd">
+            <div class="col-lg-6">
+              <h1 class="mainHeading">Grupos</h1>
+            </div>
+            <div class="col-lg-6 right-side-bar">
+              <div><a class="mainBtn" href="#">Adicionar</a></div>
+              <div>
+                <a href="#"><img src="./../../assets/svg/excel.svg" /></a>
+              </div>
+              <div><div class="line-vertical"></div></div>
+              <div>
+                <input
+                  class="input-search-bar"
+                  type="text"
+                  placeholder="Pesquisar"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Table Contents -->
+          <div class="tableContents">
+            <table class="dataTable">
+              <thead>
+                <tr>
+                  <th style="width: 300px">Nome do grupo</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diretor</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Médico</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diretor SUL</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diretor XPTO</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination-wrap">
+              <a href="#" class="pagination-item active">1</a>
+              <a href="#" class="pagination-item">2</a>
+              <a href="#" class="pagination-item">3</a>
+              <a href="#" class="pagination-item">4</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none" class="modal-content" id="modal1">
+      <div class="modal-group">
+        <div class="modal-table-group-header mb-4">
+          <div class="row">
+            <div class="col-6 form-left-header">
+              <label class="form-label">Nome do grupo</label>
+              <div class="col-4">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-6 form-right-header">
+              <a class="mainBtn" href="#">Salvar</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-5">
+              <div class="col-6 form-control input-multiple mb-3">
+                <select name="" id="">
+                  <option value="">Nome</option>
+                  <option value="">...</option>
+                </select>
+                <input type="text" value="Acucena|" />
+              </div>
+              <div class="mb-4">
+                <div class="tableContents">
+                  <table class="dataTable">
+                    <thead>
+                      <tr>
+                        <th style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </th>
+                        <th>Usuário</th>
+                        <th>E-mail</th>
+                        <th>Cargo</th>
+                        <th>Unidade</th>
+                        <th>Especialidade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </td>
+                        <td>Acucena Galuchino Perin</td>
+                        <td>email@email.com</td>
+                        <td>Admin</td>
+                        <td>Santa Paula</td>
+                        <td>Reumatologia</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </td>
+                        <td>Adalgiza Lopes Mauro</td>
+                        <td>email@email.com</td>
+                        <td>Admin</td>
+                        <td>Santa Paula</td>
+                        <td>Reumatologia</td>
+                      </tr>
+                      <tr>
+                        <td style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </td>
+                        <td>Adalgiza Lopes Mauro</td>
+                        <td>email@email.com</td>
+                        <td>Admin</td>
+                        <td>Santa Paula</td>
+                        <td>Reumatologia</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-1 form-group-center-separtator">
+              <a href="#"><img src="../../assets/svg/troca.svg" /></a>
+            </div>
+            <div class="col-6">
+              <div class="col-6 form-control input-multiple mb-3">
+                <select name="" id="">
+                  <option value="">Nome</option>
+                  <option value="">...</option>
+                </select>
+                <input type="text" value="Acucena|" />
+              </div>
+              <div class="mb-4">
+                <div class="tableContents">
+                  <table class="dataTable">
+                    <thead>
+                      <tr>
+                        <th style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </th>
+                        <th>Usuário</th>
+                        <th>E-mail</th>
+                        <th>Cargo</th>
+                        <th>Unidade</th>
+                        <th>Especialidade</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </td>
+                        <td>Acucena Galuchino Perin</td>
+                        <td>email@email.com</td>
+                        <td>Admin</td>
+                        <td>Santa Paula</td>
+                        <td>Reumatologia</td>
+                        <td colspan="4">
+                          <div class="table-options local">
+                            <a href="#"
+                              ><img
+                                src="./../../assets/svg/lixo-vermelho-claro.svg"
+                            /></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </td>
+                        <td>Acucena Galuchino Perin</td>
+                        <td>email@email.com</td>
+                        <td>Admin</td>
+                        <td>Santa Paula</td>
+                        <td>Reumatologia</td>
+                        <td colspan="4">
+                          <div class="table-options local">
+                            <a href="#"
+                              ><img
+                                src="./../../assets/svg/lixo-vermelho-claro.svg"
+                            /></a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="width: 20px">
+                          <input type="checkbox" class="" />
+                        </td>
+                        <td>Acucena Galuchino Perin</td>
+                        <td>email@email.com</td>
+                        <td>Admin</td>
+                        <td>Santa Paula</td>
+                        <td>Reumatologia</td>
+                        <td colspan="4">
+                          <div class="table-options local">
+                            <a href="#"
+                              ><img
+                                src="./../../assets/svg/lixo-vermelho-claro.svg"
+                            /></a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      $("#modal1").show();
+    </script>
+  </body>
+</html>

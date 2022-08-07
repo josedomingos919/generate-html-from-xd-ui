@@ -70,76 +70,97 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Diretor <i class="fas fa-chevron-down"></i>
+              Administrador <i class="fas fa-chevron-down"></i>
               <img src="./img/avatar.png" alt="" />
             </button>
             <div class="dropdown-menu" aria-labelledby="triggerId">
-              <a class="dropdown-item" href="#">Action 1</a>
-              <a class="dropdown-item" href="#">Action 2</a>
-              <a class="dropdown-item" href="#">Action 3</a>
+              <a class="dropdown-item" href="#">Trocar de perfil</a>
+              <a class="dropdown-item" href="#">Meu Perfil</a>
+              <a class="dropdown-item" href="#">Sair</a>
             </div>
           </div>
         </div>
         <div class="bodyContents">
           <div class="row odd">
             <div class="col-lg-6">
-              <h1 class="mainHeading">Notificação</h1>
+              <h1 class="mainHeading">Grupos</h1>
             </div>
             <div class="col-lg-6 right-side-bar">
-              <div><a class="mainBtn delete" href="#">Deletar</a></div>
               <div>
-                <a class="mainBtn transparent-light" href="#">Editar Grupos</a>
+                <a class="mainBtn transparent-light" href="#">Adicionar</a>
               </div>
-              <div><a class="mainBtn" href="#">Salvar</a></div>
+              <div><a class="mainBtn" href="#">Voltar</a></div>
+              <div>
+                <a href="#"><img src="./../../assets/svg/excel.svg" /></a>
+              </div>
+              <div><div class="line-vertical"></div></div>
+              <div>
+                <input
+                  class="input-search-bar"
+                  type="text"
+                  placeholder="Pesquisar"
+                />
+              </div>
             </div>
           </div>
 
-          <!-- body -->
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="content-form-add-normal">
-                <div class="view-line no-border">
-                  <div class="row">
-                    <div class="col-3">
-                      <label class="form-label">Título</label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        value="Evento para Diretores"
-                      />
+          <!-- Table Contents -->
+          <div class="tableContents">
+            <table class="dataTable">
+              <thead>
+                <tr>
+                  <th style="width: 300px">Nome do grupo</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diretor</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
                     </div>
-                    <div class="col-3">
-                      <label class="form-label">Grupo</label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        value="Diretores; Médicos"
-                      />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Médico</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
                     </div>
-                    <div class="col-3">
-                      <label class="form-label">Usuário </label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        value="julio@draftit.com.br; nicolas.banfi@dominio.com.br"
-                      />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diretor SUL</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
                     </div>
-                  </div>
-                </div>
-                <div class="view-line no-border">
-                  <div class="row">
-                    <div class="col-12">
-                      <label class="form-label">Título</label>
-                      <textarea
-                        class="form-control"
-                        cols="30"
-                        placeholder="Novo evento para diretores."
-                        rows="10"
-                      ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Diretor XPTO</td>
+                  <td colspan="4">
+                    <div class="table-options local">
+                      <a href="#"
+                        ><img src="./../../assets/svg/link-2.svg"
+                      /></a>
                     </div>
-                  </div>
-                </div>
-              </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination-wrap">
+              <a href="#" class="pagination-item active">1</a>
+              <a href="#" class="pagination-item">2</a>
+              <a href="#" class="pagination-item">3</a>
+              <a href="#" class="pagination-item">4</a>
             </div>
           </div>
         </div>
