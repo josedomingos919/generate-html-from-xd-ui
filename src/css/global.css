@@ -1927,3 +1927,26 @@ body {
 .cad-minh-height-570 {
   min-height: 570px;
 }
+
+.card-header-footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.card-info {
+  width: 100%;
+}
+
+.upload-link:hover,
+.upload-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.upload-img {
+  margin-top: -6px;
+}
