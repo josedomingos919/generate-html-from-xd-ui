@@ -1874,3 +1874,17 @@ body {
     #0b625f
   ) !important;
 }
+
+.form-icon-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form-escale-transaction {
+  position: relative;
+}
+
+.container-scale-date.not-padding {
+  margin-top: 0px;
+}
