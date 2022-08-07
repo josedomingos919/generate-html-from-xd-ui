@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./../../css/global.css" />
+    <link rel="stylesheet" href="./../../css/modal.css" />
   </head>
   <body>
     <!-- Body Wrapper -->
@@ -436,8 +437,102 @@
         </div>
       </div>
     </div>
+
+    <div style="display: none" class="modal-content" id="modal1">
+      <div class="modal-scale-form">
+        <div class="modal-scale-main">
+          <div class="container-radio-scale-event">
+            <button class="check-box">
+              <label class="check-icon active"></label>
+              <label>Escala</label>
+            </button>
+            <button class="check-box">
+              <label class="check-icon"></label>
+              <label>Evento</label>
+            </button>
+          </div>
+          <div class="container-scale-date">
+            <div class="row">
+              <div class="col-3">
+                <label class="form-label">Dia</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  value="31"
+                  max="31"
+                  min="1"
+                />
+              </div>
+              <div class="col-5">
+                <label class="form-label">Mês</label>
+                <input type="text" class="form-control" value="Maio" />
+              </div>
+              <div class="col-4">
+                <label class="form-label">Ano</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  value="2022"
+                  maxlength="4"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="container-scale-time">
+            <div class="row">
+              <div class="col-6">
+                <label class="scale-time-label"> Hora início </label>
+                <div class="row">
+                  <div class="col-6">
+                    <label class="form-label">Hora</label>
+                    <input class="form-control" value="18" type="number" />
+                  </div>
+                  <div class="col-6">
+                    <label class="form-label">Minuto</label>
+                    <input class="form-control" value="30" type="number" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <label class="scale-time-label"> Hora fim </label>
+                <div class="row">
+                  <div class="col-6">
+                    <label class="form-label">Hora</label>
+                    <input class="form-control" value="18" type="number" />
+                  </div>
+                  <div class="col-6">
+                    <label class="form-label">Minuto</label>
+                    <input class="form-control" value="30" type="number" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-agent-info">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <label class="form-label">Médico</label>
+                <input class="form-control" value="Dr. Nicolas" type="text" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Recorrência</label>
+                <input class="form-control" value="1x por semana" type="text" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-footer-info">
+          <a href="">Aplicar</a>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <script>
+      $("#modal1").show();
+    </script>
   </body>
 </html>
