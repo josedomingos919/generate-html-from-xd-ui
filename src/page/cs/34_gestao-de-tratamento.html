@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../css/global.css" />
+    <link rel="stylesheet" href="./../../css/modal.css" />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div class="bodyWrapper">
+      <!-- Side Menu -->
+      <div id="pageSideMenu" class="sideMenu">
+        <div class="sideMenuBrand">LOGO</div>
+        <div class="sideMenuLinks">
+          <a class="sideMenuLink active" href="#">
+            <span>
+              <img src="./../../assets/svg/gestao-de-tratamento.svg" alt="" />
+            </span>
+            Gestão de tratamentos
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/pacientes.svg" alt="" />
+            </span>
+            Pacientes
+          </a>
+          <a class="sideMenuLink" href="#">
+            <span>
+              <img src="./../../assets/svg/convenio.svg" alt="" />
+            </span>
+            Convênios
+          </a>
+        </div>
+      </div>
+      <!-- Page Contents -->
+      <div class="pageContents">
+        <!-- Hide Header -->
+        <div class="hideHeader">
+          <i id="sideMenuBtn" class="fas fa-bars"></i>
+          <a class="hideHeaderLogo" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="dashboardHeader">
+          <div class="dropdown">
+            <button
+              class="headerBtn"
+              type="button"
+              id="triggerId"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              cs <i class="fas fa-chevron-down"></i>
+              <img src="./img/avatar.png" alt="" />
+            </button>
+            <div class="dropdown-menu" aria-labelledby="triggerId">
+              <a class="dropdown-item" href="#">Meu Perfil</a>
+              <a class="dropdown-item" href="#">Sair</a>
+            </div>
+          </div>
+        </div>
+        <div class="bodyContents">
+          <div class="row odd">
+            <div class="col-lg-6">
+              <h1 class="mainHeading">Número do tratamento: XXXX</h1>
+            </div>
+            <div class="col-lg-6 right-side-bar">
+              <div><a class="mainBtn" href="#">Adicionar</a></div>
+              <div>
+                <a href="#"><img src="./../../assets/svg/excel.svg" /></a>
+              </div>
+              <div><div class="line-vertical"></div></div>
+              <div>
+                <input
+                  class="input-search-bar"
+                  type="text"
+                  placeholder="Pesquisar"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- body -->
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="content-form-add column">
+                <div class="content-form-add-2">
+                  <label class="form-add-lg-title item-inline"
+                    >Paciente:
+                    <img
+                      style="margin-left: 10px"
+                      src="./../../assets/svg/editar-baixo.svg"
+                  /></label>
+                  <label class="form-add-lg-subtitle"
+                    >Nome: Acucena Galuchino Perin</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >CPF: 000.000.000-00</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Convênio: AMIL - Plano 600</label
+                  >
+                  <label class="form-add-lg-subtitle"
+                    >Telefone: (11) 99999-9999</label
+                  >
+
+                  <label class="form-add-lg-title separator">Local:</label>
+                  <select class="form-control">
+                    <option>9 de Julho</option>
+                    <option>...</option>
+                  </select>
+
+                  <div class="row" style="margin-top: 20px">
+                    <div class="col-10">
+                      <label class="form-add-lg-title"
+                        >Motivo do tratamento::</label
+                      >
+                      <select class="form-control">
+                        <option>Descrição do motivo</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <div class="icon-algn-item">
+                        <a href="#">
+                          <img src="../../assets/svg/editar-traco.svg" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <label class="form-add-lg-title separator"
+                    >Data e hora:</label
+                  >
+                  <label class="form-add-lg-subtitle">23/02/2022 16:07</label>
+
+                  <label
+                    class="form-add-lg-title separator"
+                    style="font-size: 26px"
+                    >Status:</label
+                  >
+                  <select class="form-control green-select">
+                    <option>Finalizado</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="footer-add-left-side">
+                  <label class="mainBtn cricle" href="#"
+                    >Enviar formulário de autorização
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="content-form-add-right">
+                <div class="view-line">
+                  <div class="row">
+                    <div class="col-4">
+                      <label class="form-label">Médico Prescritor</label>
+                      <select class="form-control">
+                        <option>Nicolas Banfi</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label class="form-label">Médico Suplente</label>
+                      <select class="form-control">
+                        <option></option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label>Médico Suplente data inicio e fim</label>
+                      <input type="week" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="view-line">
+                  <div class="row">
+                    <div class="col-4">
+                      <label class="form-label">CID</label>
+                      <select class="form-control">
+                        <option>M60</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label>Data de previsão de inicio</label>
+                      <input type="date" class="form-control" />
+                    </div>
+                    <div class="col-4">
+                      <label class="form-label"
+                        >Responsável do tratamento</label
+                      >
+                      <select class="form-control">
+                        <option></option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-line">
+                  <div class="row">
+                    <div class="col-2">
+                      <label class="form-label">Fármaco</label>
+                      <select class="form-control">
+                        <option>SINAGYS</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <label>Dose</label>
+                      <input type="number" class="form-control" value="9" />
+                    </div>
+                    <div class="col-3">
+                      <label class="form-label"> Tipo de posologia</label>
+                      <select class="form-control">
+                        <option>Semanal</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-2">
+                      <label>Quantidade</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="Quinzenal "
+                      />
+                    </div>
+                    <div class="col-3">
+                      <label>Data de infusão</label>
+                      <input type="date" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 align-items-text-add">
+                      <a href="#"
+                        ><img src="../../assets/svg/add-more.svg"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="view-line">
+                  <div>
+                    <label class="form-add-lg-title">Anexar documentos</label>
+                  </div>
+                  <div class="add-more-doc">
+                    <img src="../../assets/svg/carregar-finheiro.svg" />
+                  </div>
+                  <div class="file-tiems-loaded">
+                    <div><img src="../../assets/svg/descarrega.svg" /></div>
+                    <div>foto.pdf</div>
+                    <div><img src="../../assets/svg/deletar-red.svg" /></div>
+                  </div>
+                </div>
+                <div class="view-line no-border">
+                  <label>Registros adicionais:</label>
+                  <textarea
+                    class="form-control adjust-text-area"
+                    placeholder="Digite sua observação"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none" class="modal-content" id="modal1">
+      <div class="form-modal-with-table">
+        <div class="delete-item-test">
+          <img src="../../assets/svg/deletar.svg" />
+        </div>
+        <div class="container p-2 pt-3">
+          <div class="col-4">
+            <label class="form-label" style="font-size: 13pt" for="item-list"
+              >Escolha o Script</label
+            >
+
+            <select class="form-control" name="" id="item-list">
+              <option value="#">Script Amil</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      $("#modal1").show();
+    </script>
+  </body>
+</html>
